@@ -222,7 +222,6 @@ threadpoolctl==3.0.0
 toml==0.10.2
 tomli==1.0.4
 toolz==0.11.1
-torch==1.8.1
 torchcsprng==0.2.1
 torchvision==0.9.1
 tornado==6.1
