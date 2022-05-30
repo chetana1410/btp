@@ -247,3 +247,4 @@ win32-setctime==1.0.4
 wrapt==1.12.1
 yarl==1.6.3
 zipp==3.7.0
+gunicorn==20.1.0
