@@ -1,0 +1,7 @@
+<html>
+    <body>
+        {% for i in range(len) %}
+            <img src="{{ url_for('static', filename='results/' + images[i]) }}" >
+        {% endfor %}
+    </body>
+</html>

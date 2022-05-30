@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css" />
+    </head>
+    <body>
+        <!-- <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Input</th>
+                    <th scope="col">Result</th>
+                    <th scope="col">Properties</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in range(len) %}
+                <img src="{{ url_for('static', filename='results/' + images[i]) }}" >
+                <tr>
+                    <td scope="col">
+                        <img
+                            src="{{ url_for('static', filename='results/' + images[i]) }}"
+                        />
+                    </td>
+                    <td scope="col">
+                        <img
+                            src="{{ url_for('static', filename='results/' + shots[i]) }}"
+                        />
+                    </td>
+                    <td scope="col">{{props[i]}}</td>
+                </tr>
+                {% endfor %}
+                <tr>
+                    <td scope="col">
+                        <img src="1.jpg" />
+                    </td>
+                    <td scope="col">
+                        <img src="2.jpg" />
+                    </td>
+                    <td scope="col">L=1,W=1</td>
+                </tr>
+            </tbody>
+        </table> -->
+
+        {% for i in range(len) %}
+            <div class="card my-5 mx-auto" style="width: 50vw">
+                <div class="card-body row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="{{ url_for('static', filename='images/' + images[i]) }}" class="card-img-top" />
+                            <div class="card-body">
+                                <center><h5>Input Image</h4></center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="{{ url_for('static', filename='results/' + results[i]) }}" class="card-img-top" />
+                            <div class="card-body">
+                                <center><h5>Output Image</h4></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <b><center>{{props[i]}}</center></b>
+                </div>
+            </div>
+        {% endfor %}
+
+        <!-- <div class="card my-4 mx-auto" style="width: 50vw">
+            <div class="card-body row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="1.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p>Input Image</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="2.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p>Output Image</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <b><center>Properties</center></b>
+            </div>
+        </div>
+        <div class="card my-5 mx-auto" style="width: 50vw">
+            <div class="card-body row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="1.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <center><h5>Input Image</h4></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="2.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <center><h5>Output Image</h4></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <b><center>Properties</center></b>
+            </div>
+        </div>
+        <div class="card my-4 mx-auto" style="width: 50vw">
+            <div class="card-body row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="1.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p>Input Image</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="2.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p>Output Image</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <b><center>Properties</center></b>
+            </div>
+        </div> -->
+
+        <script src="bootstrap.min.js"></script>
+    </body>
+</html>
